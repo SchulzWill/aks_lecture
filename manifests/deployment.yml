@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: schulzwillakslecture 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: schulzwillakslecture 
+    spec:
+      containers:
+        - name: schulzwillakslecture 
+          image: akslecture.azurecr.io/schulzwillakslecture
+          ports:
+          - containerPort: 80
