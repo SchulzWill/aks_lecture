@@ -15,3 +15,5 @@ FROM microsoft/aspnetcore
 WORKDIR /app
 COPY --from=build-env /app/out .
 ENTRYPOINT ["dotnet", "pipelines-dotnet-core-docker.dll"]
+
+# performance Performance2020
